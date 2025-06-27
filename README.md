@@ -18,6 +18,7 @@ Input:
   - RPE you lift that weight for that amount of reps with
   - Amount of reps you want to do
   - RPE you want to that amount of reps with
+
 Output:
   - Exact weight you can lift for that RPE and ammount of reps rounded up to the second decimal
   - Aproximated weight you can lift for that RPE and ammount of reps rounded up with the respect to the lightest plate of 0.25 kg (0.5 kg because 0.25 on both sides)
