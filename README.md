@@ -2,7 +2,6 @@
 CLI tool for calculating an ammount of weight you need to take to do a certain ammount of reps with a certain RPE. Calculations are based on the Epley's formula and the reversed Epley formula.
 
 Logic of calculations:
-  As mentioned in the description, Epley's formula and reversed Epley formula are being used together. 
   - Epley's formula: RM = W*(1+R/30), where RM is a 1 rep maximum, W is the weight you used and R is the amount of reps you did with that weight. In my case, R = original amount of reps + 10 - RPE; RPE = from 1 to 10
   - Reversed Epley's formula: RT = RM/(1+R/30), where RT is a targeted ammount of reps, RM is a 1 rep maximum and R is a targeted amount of reps. In my case, R = targeted amount of reps + 10 - RPE; RPE = from 1 to 10
   - Formula used in the code: RT = (W*(1+R/30))/(1+R'/30), where RT is a targeted amount of reps, W is the weight you used, R is an amount of reps you did with original weight + 10 - RPE (RPE = from 1 to 10), and R' is a targeted amount of reps + 10 - RPE (RPE = from 1 to 10)
