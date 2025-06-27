@@ -20,10 +20,10 @@ if reps_current > 0 and reps_needed > 0:
             weight_needed = round(((weight * (1 + reps_current_total / 30)) / (1 + reps_needed_total / 30)), 2)
 
         # Round to the smallest available plate (0.25 kg)
-        weight_needed_aprox = round(weight_needed / 0.25) * 0.25
+        weight_needed_aprox = round(weight_needed / 0.5) * 0.5
 
         # Added approximation with round() in case float rounding error occurs
-        aprox_text =  f"or approximately {weight_needed_aprox}" if round((weight_needed % 0.25), 5) != 0 else ""
+        aprox_text =  f"or approximately {weight_needed_aprox}" if round((weight_needed % 0.5), 5) != 0 else ""
         print(f"To make {reps_needed} reps with RPE {rpe_needed} you need to take {weight_needed} {aprox_text}")
     else:
         print("Please, enter the correct RPE")
