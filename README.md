@@ -1,5 +1,5 @@
 # rpe-weight-calculator
-CLI tool for calculating an ammount of weight you need to take to do a certain ammount of reps with a certain RPE. Calculations are based on the Epley's formula and the reversed Epley formula.
+CLI tool for calculating an amount of weight you need to take to do a certain number of reps with a certain RPE. Calculations are based on the Epley's formula and the reversed Epley formula.
 
 Logic of calculations:
   - Epley's formula: RM = W*(1+R/30), where RM is a 1 rep maximum, W is the weight you used and R is the amount of reps you did with that weight. In my case, R = original amount of reps + 10 - RPE; RPE = from 1 to 10
@@ -19,5 +19,18 @@ Input:
   - RPE you want to that amount of reps with
 
 Output:
-  - Exact weight you can lift for that RPE and ammount of reps rounded up to the second decimal
-  - Aproximated weight you can lift for that RPE and ammount of reps rounded up with the respect to the lightest plate of 0.25 kg (0.5 kg because 0.25 on both sides)
+  - Exact weight you can lift with that RPE and number of reps (rounded up to the second decimal)
+  - Aproximated weight you can lift with that RPE and number of reps (rounded up with the respect to the lightest plate of 0.25 kg)
+
+<pre>
+Example:
+<code>
+Enter the weight you use: <b>105</b>
+Enter the number of reps you do with this weight: <b>6</b>
+Enter the RPE of the set (from 1 to 10): <b>7</b>
+Enter the number of reps you want to do: <b>3</b>
+Enter the targeted RPE (from 1 to 10): <b>9</b>
+
+<b>To make 3 reps with RPE 9 you need to take 120.44 or approximately 120.5</b>
+</code>
+</pre>
