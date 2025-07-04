@@ -34,3 +34,5 @@ Enter the targeted RPE (from 1 to 10): <b>9</b>
 <b>To make 3 reps with RPE 9 you need to take 120.44 or approximately 120.5</b>
 </code>
 </pre>
+
+*This program was made after 4 days of learning python*
